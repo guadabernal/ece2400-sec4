@@ -17,5 +17,10 @@ int main( void )
   sort( &a, &b );
   UTST_ASSERT_INT_EQ( a, 5 );
   UTST_ASSERT_INT_EQ( b, 9 );
+  int c = 5;
+  int d = 9;
+  sort( &d, &c );
+  UTST_ASSERT_INT_EQ( d, 5 );
+  UTST_ASSERT_INT_EQ( c, 9 );
   return 0;
 }
